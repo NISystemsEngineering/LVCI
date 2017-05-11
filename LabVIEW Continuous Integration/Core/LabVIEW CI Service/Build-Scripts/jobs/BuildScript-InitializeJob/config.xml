@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <logRotator class="hudson.tasks.LogRotator">
+    <daysToKeep>-1</daysToKeep>
+    <numToKeep>1</numToKeep>
+    <artifactDaysToKeep>-1</artifactDaysToKeep>
+    <artifactNumToKeep>-1</artifactNumToKeep>
+  </logRotator>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>JobName</name>
+          <description></description>
+          <defaultValue>footest</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>Description</name>
+          <description>Description of the job</description>
+          <defaultValue>footest</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>Notification</name>
+          <description>Email notification</description>
+          <defaultValue>footest</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>BuildTrigger</name>
+          <description>Build URL to pass to the Web Service</description>
+          <defaultValue>footest</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>ProjectFolder</name>
+          <description>Folder name the Job will go in</description>
+          <defaultValue>footest</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>ArtifactDays</name>
+          <description>Days to keep artifacts</description>
+          <defaultValue>15</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>SourcePoll</name>
+          <description>This sets the schedule for when to poll SCC</description>
+          <defaultValue>footest</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>DownStream</name>
+          <description>Set Downstream build</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>Alfred</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <javaposse.jobdsl.plugin.ExecuteDslScripts plugin="job-dsl@1.32">
+      <scriptText>int artifact=&quot;${ArtifactDays}&quot;.toInteger()
+
+freeStyleJob(&quot;${ProjectFolder}/${JobName}&quot;) {
+   
+  label(&apos;master&apos;)
+  description(&quot;${Description}&quot;)
+  logRotator(artifactDaysToKeep= artifact )
+  
+  wrappers {
+   preBuildCleanup() 
+    
+  }
+      
+  publishers {
+    
+    downstream (&quot;${DownStream}&quot;, thresholdName= &apos;SUCCESS&apos;)
+    mailer (&quot;${Notification}&quot;, false, true)
+    
+    
+  }
+  
+  
+  triggers {
+    cron (&quot;${BuildTrigger}&quot;)
+    scm (&quot;${SourcePoll}&quot;){
+      ignorePostCommitHooks()
+      
+    }
+    
+         
+    
+        }
+    
+  
+}</scriptText>
+      <usingScriptText>true</usingScriptText>
+      <ignoreExisting>false</ignoreExisting>
+      <removedJobAction>IGNORE</removedJobAction>
+      <removedViewAction>IGNORE</removedViewAction>
+      <lookupStrategy>JENKINS_ROOT</lookupStrategy>
+      <additionalClasspath></additionalClasspath>
+    </javaposse.jobdsl.plugin.ExecuteDslScripts>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

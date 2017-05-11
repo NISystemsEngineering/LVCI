@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>JobName</name>
+          <description></description>
+          <value>NI Week Test Build - LabVIEW Build(LabVIEW CI Service)</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>Description</name>
+          <description>Description of the job</description>
+          <value></value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>DownStream</name>
+          <description>Names of Downstream builds to trigger</description>
+          <value>NI Week Test Build - LabVIEW Build(Test CI Mediator)</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>Notification</name>
+          <description>Email notification</description>
+          <value>brandyn.adderley@ni.com</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>CIURL</name>
+          <description>Build URL to pass to the Web Service</description>
+          <value>http://10.211.55.18:8002/LabVIEWCIService/LabVIEW_Build?JSON=%7B%22Executor_Number%22:%22${EXECUTOR_NUMBER}%22,%22Workspace_Path%22:%22C:%5C%5CProgram%20Files%20(x86)%5C%5CJenkins%5C%5Cjobs%5C%5CNI%20Week%20Test%20Build%5C%5Cjobs%5C%5CNI%20Week%20Test%20Build%20-%20LabVIEW%20Build(LabVIEW%20CI%20Service)%5C%5Cworkspace%22,%22Build_Spec%22:%22LabVIEW%20CI%20Service%22,%22Project_Path%22:%22C:%5C%5CProjects%5C%5CLabVIEW%20Continuous%20Integration%5C%5CLabVIEW%20Continuous%20Integration.lvproj%22,%22Auto_Version_Increment%22:false%7D</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>ProjectFolder</name>
+          <description>Folder name the Job will go in</description>
+          <value>NI Week Test Build</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>ArtifactDays</name>
+          <description>Days to keep artifacts</description>
+          <value>15</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <javaposse.jobdsl.plugin.GeneratedJobsBuildAction plugin="job-dsl@1.32">
+      <modifiedJobs class="linked-hash-set">
+        <javaposse.jobdsl.dsl.GeneratedJob>
+          <jobName>NI Week Test Build/NI Week Test Build - LabVIEW Build(LabVIEW CI Service)</jobName>
+        </javaposse.jobdsl.dsl.GeneratedJob>
+      </modifiedJobs>
+      <lookupStrategy>JENKINS_ROOT</lookupStrategy>
+    </javaposse.jobdsl.plugin.GeneratedJobsBuildAction>
+    <javaposse.jobdsl.plugin.GeneratedViewsBuildAction plugin="job-dsl@1.32">
+      <modifiedViews class="linked-hash-set"/>
+      <lookupStrategy>JENKINS_ROOT</lookupStrategy>
+    </javaposse.jobdsl.plugin.GeneratedViewsBuildAction>
+    <javaposse.jobdsl.plugin.GeneratedConfigFilesBuildAction plugin="job-dsl@1.32">
+      <modifiedConfigFiles class="linked-hash-set"/>
+    </javaposse.jobdsl.plugin.GeneratedConfigFilesBuildAction>
+  </actions>
+  <number>100</number>
+  <startTime>1436979728288</startTime>
+  <result>SUCCESS</result>
+  <duration>4415</duration>
+  <charset>windows-1252</charset>
+  <keepLog>false</keepLog>
+  <builtOn>Alfred</builtOn>
+  <workspace>C:\Alfred\workspace\Build-Scripts\BuildScript-LabVIEWBuild</workspace>
+  <hudsonVersion>1.580.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

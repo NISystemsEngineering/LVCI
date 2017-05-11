@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>JobName</name>
+          <description></description>
+          <value>NI Week Test Build</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <javaposse.jobdsl.plugin.GeneratedJobsBuildAction plugin="job-dsl@1.32">
+      <modifiedJobs class="linked-hash-set">
+        <javaposse.jobdsl.dsl.GeneratedJob>
+          <jobName>NI Week Test Build</jobName>
+        </javaposse.jobdsl.dsl.GeneratedJob>
+      </modifiedJobs>
+      <lookupStrategy>JENKINS_ROOT</lookupStrategy>
+    </javaposse.jobdsl.plugin.GeneratedJobsBuildAction>
+    <javaposse.jobdsl.plugin.GeneratedViewsBuildAction plugin="job-dsl@1.32">
+      <modifiedViews class="linked-hash-set"/>
+      <lookupStrategy>JENKINS_ROOT</lookupStrategy>
+    </javaposse.jobdsl.plugin.GeneratedViewsBuildAction>
+    <javaposse.jobdsl.plugin.GeneratedConfigFilesBuildAction plugin="job-dsl@1.32">
+      <modifiedConfigFiles class="linked-hash-set"/>
+    </javaposse.jobdsl.plugin.GeneratedConfigFilesBuildAction>
+  </actions>
+  <number>76</number>
+  <startTime>1436979718532</startTime>
+  <result>SUCCESS</result>
+  <duration>2195</duration>
+  <charset>windows-1252</charset>
+  <keepLog>false</keepLog>
+  <builtOn>Alfred</builtOn>
+  <workspace>C:\Alfred\workspace\Build-Scripts\BuildScript-FolderCreation</workspace>
+  <hudsonVersion>1.580.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>JobName</name>
+          <description></description>
+          <value>NI Week Test Build - Job Initialize</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>Description</name>
+          <description>Description of the job</description>
+          <value>footest</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>Notification</name>
+          <description>Email notification</description>
+          <value>brandyn.adderley@ni.com</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>BuildTrigger</name>
+          <description>Build URL to pass to the Web Service</description>
+          <value></value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>ProjectFolder</name>
+          <description>Folder name the Job will go in</description>
+          <value>NI Week Test Build</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>ArtifactDays</name>
+          <description>Days to keep artifacts</description>
+          <value>15</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>SourcePoll</name>
+          <description>This sets the schedule for when to poll SCC</description>
+          <value></value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>DownStream</name>
+          <description>Set Downstream build</description>
+          <value>NI Week Test Build - LabVIEW Build(LabVIEW CI Service)</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <javaposse.jobdsl.plugin.GeneratedJobsBuildAction plugin="job-dsl@1.32">
+      <modifiedJobs class="linked-hash-set">
+        <javaposse.jobdsl.dsl.GeneratedJob>
+          <jobName>NI Week Test Build/NI Week Test Build - Job Initialize</jobName>
+        </javaposse.jobdsl.dsl.GeneratedJob>
+      </modifiedJobs>
+      <lookupStrategy>JENKINS_ROOT</lookupStrategy>
+    </javaposse.jobdsl.plugin.GeneratedJobsBuildAction>
+    <javaposse.jobdsl.plugin.GeneratedViewsBuildAction plugin="job-dsl@1.32">
+      <modifiedViews class="linked-hash-set"/>
+      <lookupStrategy>JENKINS_ROOT</lookupStrategy>
+    </javaposse.jobdsl.plugin.GeneratedViewsBuildAction>
+    <javaposse.jobdsl.plugin.GeneratedConfigFilesBuildAction plugin="job-dsl@1.32">
+      <modifiedConfigFiles class="linked-hash-set"/>
+    </javaposse.jobdsl.plugin.GeneratedConfigFilesBuildAction>
+  </actions>
+  <number>40</number>
+  <startTime>1436979733005</startTime>
+  <result>SUCCESS</result>
+  <duration>5167</duration>
+  <charset>windows-1252</charset>
+  <keepLog>false</keepLog>
+  <builtOn>Alfred</builtOn>
+  <workspace>C:\Alfred\workspace\Build-Scripts\BuildScript-InitializeJob</workspace>
+  <hudsonVersion>1.580.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>
