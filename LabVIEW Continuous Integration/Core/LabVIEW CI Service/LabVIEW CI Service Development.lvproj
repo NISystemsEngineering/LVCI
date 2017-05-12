@@ -14,27 +14,6 @@
 		<Property Name="server.viscripting.showScriptingOperationsInContextHelp" Type="Bool">false</Property>
 		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Build-Scripts" Type="Folder">
-			<Item Name="jobs" Type="Folder">
-				<Item Name="BuildScript-FolderCreation" Type="Folder">
-					<Item Name="config.xml" Type="Document" URL="../Build-Scripts/jobs/BuildScript-FolderCreation/config.xml"/>
-					<Item Name="nextBuildNumber" Type="Document" URL="../Build-Scripts/jobs/BuildScript-FolderCreation/nextBuildNumber"/>
-				</Item>
-				<Item Name="BuildScript-InitializeJob" Type="Folder">
-					<Item Name="config.xml" Type="Document" URL="../Build-Scripts/jobs/BuildScript-InitializeJob/config.xml"/>
-					<Item Name="nextBuildNumber" Type="Document" URL="../Build-Scripts/jobs/BuildScript-InitializeJob/nextBuildNumber"/>
-				</Item>
-				<Item Name="BuildScript-LabVIEWBuild" Type="Folder">
-					<Item Name="config.xml" Type="Document" URL="../Build-Scripts/jobs/BuildScript-LabVIEWBuild/config.xml"/>
-					<Item Name="nextBuildNumber" Type="Document" URL="../Build-Scripts/jobs/BuildScript-LabVIEWBuild/nextBuildNumber"/>
-				</Item>
-				<Item Name="BuildScript-RunVI" Type="Folder">
-					<Item Name="config.xml" Type="Document" URL="../Build-Scripts/jobs/BuildScript-RunVI/config.xml"/>
-					<Item Name="nextBuildNumber" Type="Document" URL="../Build-Scripts/jobs/BuildScript-RunVI/nextBuildNumber"/>
-				</Item>
-			</Item>
-			<Item Name="config.xml" Type="Document" URL="../Build-Scripts/config.xml"/>
-		</Item>
 		<Item Name="LabVIEW CI Service" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="Actors" Type="Folder">
@@ -784,21 +763,13 @@
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="LabVIEW Build - STYP.ctl" Type="VI" URL="../../Shared/Controls/LabVIEW Build - STYP.ctl"/>
 			<Item Name="LV Config Read Boolean.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read Boolean.vi"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="Read Events.vi" Type="VI" URL="../../Shared/Classes/Status Updater/Read Events.vi"/>
-			<Item Name="Run UTF - STYP.ctl" Type="VI" URL="../../Shared/Controls/Run UTF - STYP.ctl"/>
-			<Item Name="Run VI - STYP.ctl" Type="VI" URL="../../Shared/Controls/Run VI - STYP.ctl"/>
 			<Item Name="Status Updater.ctl" Type="VI" URL="../../Shared/Classes/Status Updater/Status Updater.lvclass/Status Updater.ctl"/>
 			<Item Name="Update Numeric Data.vi" Type="VI" URL="../../Shared/Classes/Status Events/Update Numeric Data.vi"/>
 			<Item Name="Update String Data.vi" Type="VI" URL="../../Shared/Classes/Status Events/Update String Data.vi"/>
-			<Item Name="VI Analyzer - STYP.ctl" Type="VI" URL="../../Shared/Controls/VI Analyzer - STYP.ctl"/>
 			<Item Name="VIAnUI Obtain CFG Password.vi" Type="VI" URL="../../../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2014/project/_VI Analyzer/analyzerui.llb/VIAnUI Obtain CFG Password.vi"/>
-			<Item Name="VIP Install - STYP.ctl" Type="VI" URL="../../Shared/Controls/VIP Install - STYP.ctl"/>
-			<Item Name="VIP Uninstall - STYP.ctl" Type="VI" URL="../../Shared/Controls/VIP Uninstall - STYP.ctl"/>
-			<Item Name="VIPB Build - STYP.ctl" Type="VI" URL="../../Shared/Controls/VIPB Build - STYP.ctl"/>
-			<Item Name="VIPM Update - STYP.ctl" Type="VI" URL="../../Shared/Controls/VIPM Update - STYP.ctl"/>
 			<Item Name="ws_runtime.dll" Type="Document" URL="ws_runtime.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
