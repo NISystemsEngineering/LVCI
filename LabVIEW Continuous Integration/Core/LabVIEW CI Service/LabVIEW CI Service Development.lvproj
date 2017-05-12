@@ -164,21 +164,21 @@
 		</Item>
 		<Item Name="Shared" Type="Folder">
 			<Item Name="Classes" Type="Folder">
-				<Item Name="Status Events.lvclass" Type="LVClass" URL="../../Shared/Classes/Status Events/Status Events.lvclass"/>
-				<Item Name="Status Updater.lvclass" Type="LVClass" URL="../../Shared/Classes/Status Updater/Status Updater.lvclass"/>
+				<Item Name="Status Events.lvclass" Type="LVClass" URL="../Classes/Status Events/Status Events.lvclass"/>
+				<Item Name="Status Updater.lvclass" Type="LVClass" URL="../Classes/Status Updater/Status Updater.lvclass"/>
 			</Item>
 			<Item Name="Controls" Type="Folder">
-				<Item Name="LabVIEW Build - STYP.ctl" Type="VI" URL="../../Shared/Controls/LabVIEW Build - STYP.ctl"/>
-				<Item Name="Run UTF - STYP.ctl" Type="VI" URL="../../Shared/Controls/Run UTF - STYP.ctl"/>
-				<Item Name="Run VI - STYP.ctl" Type="VI" URL="../../Shared/Controls/Run VI - STYP.ctl"/>
-				<Item Name="VI Analyzer - STYP.ctl" Type="VI" URL="../../Shared/Controls/VI Analyzer - STYP.ctl"/>
-				<Item Name="VI Tester - STYP.ctl" Type="VI" URL="../../Shared/Controls/VI Tester - STYP.ctl"/>
-				<Item Name="VIP Install - STYP.ctl" Type="VI" URL="../../Shared/Controls/VIP Install - STYP.ctl"/>
-				<Item Name="VIP Publish - STYP.ctl" Type="VI" URL="../../Shared/Controls/VIP Publish - STYP.ctl"/>
-				<Item Name="VIP Uninstall - STYP.ctl" Type="VI" URL="../../Shared/Controls/VIP Uninstall - STYP.ctl"/>
-				<Item Name="VIPB Build - STYP.ctl" Type="VI" URL="../../Shared/Controls/VIPB Build - STYP.ctl"/>
-				<Item Name="VIPC Apply - STYP.ctl" Type="VI" URL="../../Shared/Controls/VIPC Apply - STYP.ctl"/>
-				<Item Name="VIPM Update - STYP.ctl" Type="VI" URL="../../Shared/Controls/VIPM Update - STYP.ctl"/>
+				<Item Name="LabVIEW Build - STYP.ctl" Type="VI" URL="../Extensions/LabVIEW Build/LabVIEW Build/LabVIEW Build - STYP.ctl"/>
+				<Item Name="Run UTF - STYP.ctl" Type="VI" URL="../Extensions/Run UTF/Run UTF/Run UTF - STYP.ctl"/>
+				<Item Name="Run VI - STYP.ctl" Type="VI" URL="../Extensions/Run VI/Run VI/Run VI - STYP.ctl"/>
+				<Item Name="VI Analyzer - STYP.ctl" Type="VI" URL="../Extensions/VI Analyzer/VI Analyzer/VI Analyzer - STYP.ctl"/>
+				<Item Name="VI Tester - STYP.ctl" Type="VI" URL="../Extensions/Run VI Tester/Run VI Tester/VI Tester - STYP.ctl"/>
+				<Item Name="VIP Install - STYP.ctl" Type="VI" URL="../Extensions/VIP Install/VIP Install/VIP Install - STYP.ctl"/>
+				<Item Name="VIP Publish - STYP.ctl" Type="VI" URL="../Extensions/VIP Publish/VIP Publish/VIP Publish - STYP.ctl"/>
+				<Item Name="VIP Uninstall - STYP.ctl" Type="VI" URL="../Extensions/VIP Uninstall/VIP Uninstall/VIP Uninstall - STYP.ctl"/>
+				<Item Name="VIPB Build - STYP.ctl" Type="VI" URL="../Extensions/VIPB Build/VIPB Build/VIPB Build - STYP.ctl"/>
+				<Item Name="VIPC Apply - STYP.ctl" Type="VI" URL="../Extensions/VIPC Apply/VIPC Apply/VIPC Apply - STYP.ctl"/>
+				<Item Name="VIPM Update - STYP.ctl" Type="VI" URL="../Extensions/VIPM Update/VIPM Update/VIPM Update - STYP.ctl"/>
 			</Item>
 		</Item>
 		<Item Name="Test" Type="Folder">
@@ -778,12 +778,27 @@
 				<Item Name="ZLIB Uncompress File Info__ogtk16290F98F102B0FBD386C52BCC276B65.ctl" Type="VI" URL="/&lt;vilib&gt;/JKI/_VIPM API_internal_deps/ZLIB Uncompress File Info__ogtk16290F98F102B0FBD386C52BCC276B65.ctl"/>
 				<Item Name="ZLIB Unzip Handle__ogtk16290F98F102B0FBD386C52BCC276B65.ctl" Type="VI" URL="/&lt;vilib&gt;/JKI/_VIPM API_internal_deps/ZLIB Unzip Handle__ogtk16290F98F102B0FBD386C52BCC276B65.ctl"/>
 			</Item>
+			<Item Name="Create.vi" Type="VI" URL="../../Shared/Classes/Status Events/Create.vi"/>
+			<Item Name="Create.vi" Type="VI" URL="../../Shared/Classes/Status Updater/Create.vi"/>
+			<Item Name="Destroy.vi" Type="VI" URL="../../Shared/Classes/Status Updater/Destroy.vi"/>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="LabVIEW Build - STYP.ctl" Type="VI" URL="../../Shared/Controls/LabVIEW Build - STYP.ctl"/>
 			<Item Name="LV Config Read Boolean.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read Boolean.vi"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
-			<Item Name="VIAnUI Obtain CFG Password.vi" Type="VI" URL="../../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2014/project/_VI Analyzer/analyzerui.llb/VIAnUI Obtain CFG Password.vi"/>
+			<Item Name="Read Events.vi" Type="VI" URL="../../Shared/Classes/Status Updater/Read Events.vi"/>
+			<Item Name="Run UTF - STYP.ctl" Type="VI" URL="../../Shared/Controls/Run UTF - STYP.ctl"/>
+			<Item Name="Run VI - STYP.ctl" Type="VI" URL="../../Shared/Controls/Run VI - STYP.ctl"/>
+			<Item Name="Status Updater.ctl" Type="VI" URL="../../Shared/Classes/Status Updater/Status Updater.lvclass/Status Updater.ctl"/>
+			<Item Name="Update Numeric Data.vi" Type="VI" URL="../../Shared/Classes/Status Events/Update Numeric Data.vi"/>
+			<Item Name="Update String Data.vi" Type="VI" URL="../../Shared/Classes/Status Events/Update String Data.vi"/>
+			<Item Name="VI Analyzer - STYP.ctl" Type="VI" URL="../../Shared/Controls/VI Analyzer - STYP.ctl"/>
+			<Item Name="VIAnUI Obtain CFG Password.vi" Type="VI" URL="../../../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2014/project/_VI Analyzer/analyzerui.llb/VIAnUI Obtain CFG Password.vi"/>
+			<Item Name="VIP Install - STYP.ctl" Type="VI" URL="../../Shared/Controls/VIP Install - STYP.ctl"/>
+			<Item Name="VIP Uninstall - STYP.ctl" Type="VI" URL="../../Shared/Controls/VIP Uninstall - STYP.ctl"/>
+			<Item Name="VIPB Build - STYP.ctl" Type="VI" URL="../../Shared/Controls/VIPB Build - STYP.ctl"/>
+			<Item Name="VIPM Update - STYP.ctl" Type="VI" URL="../../Shared/Controls/VIPM Update - STYP.ctl"/>
 			<Item Name="ws_runtime.dll" Type="Document" URL="ws_runtime.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
