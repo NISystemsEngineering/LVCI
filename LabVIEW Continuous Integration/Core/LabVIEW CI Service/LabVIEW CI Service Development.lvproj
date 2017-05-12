@@ -119,7 +119,7 @@
 			<Item Name="LabVIEW CI Startup VI.vi" Type="VI" URL="../LabVIEW CI Startup VI.vi">
 				<Property Name="ws.type" Type="Int">2</Property>
 			</Item>
-			<Item Name="LabVIEWCIService" Type="Web Service">
+			<Item Name="LVCI" Type="Web Service">
 				<Property Name="Bld_buildSpecName" Type="Str"></Property>
 				<Property Name="Bld_version.build" Type="Int">57</Property>
 				<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
