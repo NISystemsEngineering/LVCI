@@ -14,27 +14,6 @@
 		<Property Name="server.viscripting.showScriptingOperationsInContextHelp" Type="Bool">false</Property>
 		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Build-Scripts" Type="Folder">
-			<Item Name="jobs" Type="Folder">
-				<Item Name="BuildScript-FolderCreation" Type="Folder">
-					<Item Name="config.xml" Type="Document" URL="../Build-Scripts/jobs/BuildScript-FolderCreation/config.xml"/>
-					<Item Name="nextBuildNumber" Type="Document" URL="../Build-Scripts/jobs/BuildScript-FolderCreation/nextBuildNumber"/>
-				</Item>
-				<Item Name="BuildScript-InitializeJob" Type="Folder">
-					<Item Name="config.xml" Type="Document" URL="../Build-Scripts/jobs/BuildScript-InitializeJob/config.xml"/>
-					<Item Name="nextBuildNumber" Type="Document" URL="../Build-Scripts/jobs/BuildScript-InitializeJob/nextBuildNumber"/>
-				</Item>
-				<Item Name="BuildScript-LabVIEWBuild" Type="Folder">
-					<Item Name="config.xml" Type="Document" URL="../Build-Scripts/jobs/BuildScript-LabVIEWBuild/config.xml"/>
-					<Item Name="nextBuildNumber" Type="Document" URL="../Build-Scripts/jobs/BuildScript-LabVIEWBuild/nextBuildNumber"/>
-				</Item>
-				<Item Name="BuildScript-RunVI" Type="Folder">
-					<Item Name="config.xml" Type="Document" URL="../Build-Scripts/jobs/BuildScript-RunVI/config.xml"/>
-					<Item Name="nextBuildNumber" Type="Document" URL="../Build-Scripts/jobs/BuildScript-RunVI/nextBuildNumber"/>
-				</Item>
-			</Item>
-			<Item Name="config.xml" Type="Document" URL="../Build-Scripts/config.xml"/>
-		</Item>
 		<Item Name="LabVIEW CI Service" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="Actors" Type="Folder">
@@ -88,7 +67,7 @@
 			</Item>
 			<Item Name="LabVIEWCIService" Type="Web Service">
 				<Property Name="Bld_buildSpecName" Type="Str"></Property>
-				<Property Name="Bld_version.build" Type="Int">57</Property>
+				<Property Name="Bld_version.build" Type="Int">59</Property>
 				<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
 				<Property Name="ws.disconnectInline" Type="Bool">true</Property>
 				<Property Name="ws.disconnectTypeDefs" Type="Bool">false</Property>
@@ -167,60 +146,29 @@
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
+				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
-				<Item Name="Time-Delay Override Options.ctl" Type="VI" URL="/&lt;vilib&gt;/ActorFramework/Time-Delayed Send Message/Time-Delay Override Options.ctl"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="Upper Proxy Actor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/ActorFramework/Upper Proxy Actor/Upper Proxy Actor.lvclass"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="AF Debug.lvlib" Type="Library" URL="/&lt;resource&gt;/AFDebug/AF Debug.lvlib"/>
+			<Item Name="LabVIEW Build - STYP.ctl" Type="VI" URL="../Extensions/LabVIEW Build/LabVIEW Build/LabVIEW Build - STYP.ctl"/>
+			<Item Name="LabVIEW Build.lvclass" Type="LVClass" URL="../Extensions/LabVIEW Build/LabVIEW Build/LabVIEW Build.lvclass"/>
+			<Item Name="Run VI - STYP.ctl" Type="VI" URL="../Extensions/Run VI/Run VI/Run VI - STYP.ctl"/>
+			<Item Name="Run VI.lvclass" Type="LVClass" URL="../Extensions/Run VI/Run VI/Run VI.lvclass"/>
+			<Item Name="Status Events.lvclass" Type="LVClass" URL="../Classes/Status Events/Status Events.lvclass"/>
+			<Item Name="Status Updater.lvclass" Type="LVClass" URL="../Classes/Status Updater/Status Updater.lvclass"/>
 			<Item Name="ws_runtime.dll" Type="Document" URL="ws_runtime.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Property Name="NI.SortType" Type="Int">3</Property>
-			<Item Name="Jenkins Build Scripts" Type="Source Distribution">
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{19990274-6244-4291-A130-5DF0766095EB}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Jenkins Build Scripts</Property>
-				<Property Name="Bld_excludedDirectory[0]" Type="Path">vi.lib</Property>
-				<Property Name="Bld_excludedDirectory[0].pathType" Type="Str">relativeToAppDir</Property>
-				<Property Name="Bld_excludedDirectory[1]" Type="Path">resource/objmgr</Property>
-				<Property Name="Bld_excludedDirectory[1].pathType" Type="Str">relativeToAppDir</Property>
-				<Property Name="Bld_excludedDirectory[2]" Type="Path">/C/ProgramData/National Instruments/InstCache/14.0</Property>
-				<Property Name="Bld_excludedDirectory[3]" Type="Path">instr.lib</Property>
-				<Property Name="Bld_excludedDirectory[3].pathType" Type="Str">relativeToAppDir</Property>
-				<Property Name="Bld_excludedDirectory[4]" Type="Path">user.lib</Property>
-				<Property Name="Bld_excludedDirectory[4].pathType" Type="Str">relativeToAppDir</Property>
-				<Property Name="Bld_excludedDirectoryCount" Type="Int">5</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/Program Files (x86)/Jenkins/jobs/Build-Scripts</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{612EF860-BFA2-4AD4-B9BE-F25B9ACBEF96}</Property>
-				<Property Name="Bld_version.build" Type="Int">4</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/Program Files (x86)/Jenkins/jobs/Build-Scripts</Property>
-				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/C/Program Files (x86)/Jenkins/jobs/Build-Scripts/data</Property>
-				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{471DDF00-A595-41D2-B12B-4F971CCADA3C}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
-				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Build-Scripts</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[1].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-			</Item>
 			<Item Name="LabVIEW CI Service" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{936E9ED2-ACEE-420C-A069-CFB97880B095}</Property>
@@ -238,7 +186,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../Builds/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{0CA22CC6-6AF6-403D-A720-562EF817CABA}</Property>
-				<Property Name="Bld_version.build" Type="Int">55</Property>
+				<Property Name="Bld_version.build" Type="Int">56</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabVIEW CI Service.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../Builds/NI_AB_PROJECTNAME/LabVIEW CI Service.exe</Property>
@@ -281,7 +229,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D8DCBD74-F7BB-4A33-86A1-EA4839D9B0E4}</Property>
-				<Property Name="Bld_version.build" Type="Int">12</Property>
+				<Property Name="Bld_version.build" Type="Int">13</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Add LVCI to Config.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../Builds/Add LVCI to Config.exe</Property>
@@ -392,11 +340,11 @@
 				<Property Name="INST_buildSpecName" Type="Str">Installer - LabVIEW CI Service</Property>
 				<Property Name="INST_defaultDir" Type="Str">{B4D15D32-F791-45D2-B8B8-F69B662B5124}</Property>
 				<Property Name="INST_productName" Type="Str">LabVIEW Continuous Integration</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.11</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.12</Property>
 				<Property Name="INST_webService.count" Type="Int">1</Property>
 				<Property Name="INST_webService[0].itemID" Type="Ref">/My Computer/LabVIEW CI Service/LabVIEWCIService</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">14008037</Property>
+				<Property Name="InstSpecVersion" Type="Str">14018013</Property>
 				<Property Name="MSI_arpCompany" Type="Str">NI</Property>
 				<Property Name="MSI_arpURL" Type="Str">http://www.ni.com/</Property>
 				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
