@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<testsuites failures="16" tests="27" time="3.847">
+	<testsuite failures="0" name="Test Network Stream Disconnect" tests="1" time="0.059">
+		<testcase name="Disconnect" time="0.059"/>
+	</testsuite>
+	<testsuite failures="0" name="Test Network Stream Initiator Connect" tests="1" time="0.210">
+		<testcase name="Connect" time="0.210"/>
+	</testsuite>
+	<testsuite failures="0" name="Test Network Stream Listener Connect" tests="1" time="0.228">
+		<testcase name="Connect" time="0.228"/>
+	</testsuite>
+	<testsuite failures="0" name="Test Network Stream Transmission" tests="4" time="0.244">
+		<testcase name="Receive Message" time="0.067"/>
+		<testcase name="Receive Stop Flag" time="0.059"/>
+		<testcase name="Receive Message Abort" time="0.058"/>
+		<testcase name="Send Message" time="0.060"/>
+	</testsuite>
+	<testsuite failures="4" name="Test Network Stream Nested Endpoint" tests="4" time="0.000">
+		<testcase name="Stop Initiator" time="0.000">
+			<failure message=" details [code: 1003 source: Invoke Node in TestCase.lvclass:CallTestMethod.vi->TestCase.lvclass:run.vi->TestSuite.lvclass:run.vi->TestRunner.lvclass:run.vi->VI Tester API.lvlib:Run Tests (Test Object Array).vi->VI Tester API.lvlib:Run Tests (Path Array).vi->VI Tester API.lvlib:Run Tests (Path).vi&#xA;&lt;APPEND>&#xA;Method Name: &lt;b>Run VI&lt;/b>&#xA;&#xA;VI Path: &lt;b>P:\alsmith\Sales\users\ACS\Actors\Network Endpoints\1.0\Source\Tests\Test Network Stream Nested Endpoint\setUp.vi&lt;/b>]" type="Error"></failure>
+		</testcase>
+		<testcase name="Stop Listener" time="0.000">
+			<failure message=" details [code: 1003 source: Invoke Node in TestCase.lvclass:CallTestMethod.vi->TestCase.lvclass:run.vi->TestSuite.lvclass:run.vi->TestRunner.lvclass:run.vi->VI Tester API.lvlib:Run Tests (Test Object Array).vi->VI Tester API.lvlib:Run Tests (Path Array).vi->VI Tester API.lvlib:Run Tests (Path).vi&#xA;&lt;APPEND>&#xA;Method Name: &lt;b>Run VI&lt;/b>&#xA;&#xA;VI Path: &lt;b>P:\alsmith\Sales\users\ACS\Actors\Network Endpoints\1.0\Source\Tests\Test Network Stream Nested Endpoint\setUp.vi&lt;/b>]" type="Error"></failure>
+		</testcase>
+		<testcase name="Send from Listener" time="0.000">
+			<failure message=" details [code: 1003 source: Invoke Node in TestCase.lvclass:CallTestMethod.vi->TestCase.lvclass:run.vi->TestSuite.lvclass:run.vi->TestRunner.lvclass:run.vi->VI Tester API.lvlib:Run Tests (Test Object Array).vi->VI Tester API.lvlib:Run Tests (Path Array).vi->VI Tester API.lvlib:Run Tests (Path).vi&#xA;&lt;APPEND>&#xA;Method Name: &lt;b>Run VI&lt;/b>&#xA;&#xA;VI Path: &lt;b>P:\alsmith\Sales\users\ACS\Actors\Network Endpoints\1.0\Source\Tests\Test Network Stream Nested Endpoint\setUp.vi&lt;/b>]" type="Error"></failure>
+		</testcase>
+		<testcase name="Send from Initiator" time="0.000">
+			<failure message=" details [code: 1003 source: Invoke Node in TestCase.lvclass:CallTestMethod.vi->TestCase.lvclass:run.vi->TestSuite.lvclass:run.vi->TestRunner.lvclass:run.vi->VI Tester API.lvlib:Run Tests (Test Object Array).vi->VI Tester API.lvlib:Run Tests (Path Array).vi->VI Tester API.lvlib:Run Tests (Path).vi&#xA;&lt;APPEND>&#xA;Method Name: &lt;b>Run VI&lt;/b>&#xA;&#xA;VI Path: &lt;b>P:\alsmith\Sales\users\ACS\Actors\Network Endpoints\1.0\Source\Tests\Test Network Stream Nested Endpoint\setUp.vi&lt;/b>]" type="Error"></failure>
+		</testcase>
+	</testsuite>
+	<testsuite failures="5" name="Test TCP Nested Endpoint" tests="5" time="0.000">
+		<testcase name="Stop Initiator" time="0.000">
+			<failure message=" details [code: 1003 source: Invoke Node in TestCase.lvclass:CallTestMethod.vi->TestCase.lvclass:run.vi->TestSuite.lvclass:run.vi->TestRunner.lvclass:run.vi->VI Tester API.lvlib:Run Tests (Test Object Array).vi->VI Tester API.lvlib:Run Tests (Path Array).vi->VI Tester API.lvlib:Run Tests (Path).vi&#xA;&lt;APPEND>&#xA;Method Name: &lt;b>Run VI&lt;/b>&#xA;&#xA;VI Path: &lt;b>P:\alsmith\Sales\users\ACS\Actors\Network Endpoints\1.0\Source\Tests\Test TCP Nested Endpoint\setUp.vi&lt;/b>]" type="Error"></failure>
+		</testcase>
+		<testcase name="Stop Listener" time="0.000">
+			<failure message=" details [code: 1003 source: Invoke Node in TestCase.lvclass:CallTestMethod.vi->TestCase.lvclass:run.vi->TestSuite.lvclass:run.vi->TestRunner.lvclass:run.vi->VI Tester API.lvlib:Run Tests (Test Object Array).vi->VI Tester API.lvlib:Run Tests (Path Array).vi->VI Tester API.lvlib:Run Tests (Path).vi&#xA;&lt;APPEND>&#xA;Method Name: &lt;b>Run VI&lt;/b>&#xA;&#xA;VI Path: &lt;b>P:\alsmith\Sales\users\ACS\Actors\Network Endpoints\1.0\Source\Tests\Test TCP Nested Endpoint\setUp.vi&lt;/b>]" type="Error"></failure>
+		</testcase>
+		<testcase name="Send from Listener" time="0.000">
+			<failure message=" details [code: 1003 source: Invoke Node in TestCase.lvclass:CallTestMethod.vi->TestCase.lvclass:run.vi->TestSuite.lvclass:run.vi->TestRunner.lvclass:run.vi->VI Tester API.lvlib:Run Tests (Test Object Array).vi->VI Tester API.lvlib:Run Tests (Path Array).vi->VI Tester API.lvlib:Run Tests (Path).vi&#xA;&lt;APPEND>&#xA;Method Name: &lt;b>Run VI&lt;/b>&#xA;&#xA;VI Path: &lt;b>P:\alsmith\Sales\users\ACS\Actors\Network Endpoints\1.0\Source\Tests\Test TCP Nested Endpoint\setUp.vi&lt;/b>]" type="Error"></failure>
+		</testcase>
+		<testcase name="Send from Initiator" time="0.000">
+			<failure message=" details [code: 1003 source: Invoke Node in TestCase.lvclass:CallTestMethod.vi->TestCase.lvclass:run.vi->TestSuite.lvclass:run.vi->TestRunner.lvclass:run.vi->VI Tester API.lvlib:Run Tests (Test Object Array).vi->VI Tester API.lvlib:Run Tests (Path Array).vi->VI Tester API.lvlib:Run Tests (Path).vi&#xA;&lt;APPEND>&#xA;Method Name: &lt;b>Run VI&lt;/b>&#xA;&#xA;VI Path: &lt;b>P:\alsmith\Sales\users\ACS\Actors\Network Endpoints\1.0\Source\Tests\Test TCP Nested Endpoint\setUp.vi&lt;/b>]" type="Error"></failure>
+		</testcase>
+		<testcase name="Receive Connected Messages" time="0.000">
+			<failure message=" details [code: 1003 source: Invoke Node in TestCase.lvclass:CallTestMethod.vi->TestCase.lvclass:run.vi->TestSuite.lvclass:run.vi->TestRunner.lvclass:run.vi->VI Tester API.lvlib:Run Tests (Test Object Array).vi->VI Tester API.lvlib:Run Tests (Path Array).vi->VI Tester API.lvlib:Run Tests (Path).vi&#xA;&lt;APPEND>&#xA;Method Name: &lt;b>Run VI&lt;/b>&#xA;&#xA;VI Path: &lt;b>P:\alsmith\Sales\users\ACS\Actors\Network Endpoints\1.0\Source\Tests\Test TCP Nested Endpoint\setUp.vi&lt;/b>]" type="Error"></failure>
+		</testcase>
+	</testsuite>
+	<testsuite failures="3" name="Test TCP Nested Endpoint Nonforwarded Messages" tests="3" time="0.000">
+		<testcase name="Send Error Report" time="0.000">
+			<failure message=" details [code: 1003 source: Invoke Node in TestCase.lvclass:CallTestMethod.vi->TestCase.lvclass:run.vi->TestSuite.lvclass:run.vi->TestRunner.lvclass:run.vi->VI Tester API.lvlib:Run Tests (Test Object Array).vi->VI Tester API.lvlib:Run Tests (Path Array).vi->VI Tester API.lvlib:Run Tests (Path).vi&#xA;&lt;APPEND>&#xA;Method Name: &lt;b>Run VI&lt;/b>&#xA;&#xA;VI Path: &lt;b>P:\alsmith\Sales\users\ACS\Actors\Network Endpoints\1.0\Source\Tests\Test TCP Nested Endpoint Nonforwarded Messages\setUp.vi&lt;/b>]" type="Error"></failure>
+		</testcase>
+		<testcase name="Send Last Ack" time="0.000">
+			<failure message=" details [code: 1003 source: Invoke Node in TestCase.lvclass:CallTestMethod.vi->TestCase.lvclass:run.vi->TestSuite.lvclass:run.vi->TestRunner.lvclass:run.vi->VI Tester API.lvlib:Run Tests (Test Object Array).vi->VI Tester API.lvlib:Run Tests (Path Array).vi->VI Tester API.lvlib:Run Tests (Path).vi&#xA;&lt;APPEND>&#xA;Method Name: &lt;b>Run VI&lt;/b>&#xA;&#xA;VI Path: &lt;b>P:\alsmith\Sales\users\ACS\Actors\Network Endpoints\1.0\Source\Tests\Test TCP Nested Endpoint Nonforwarded Messages\setUp.vi&lt;/b>]" type="Error"></failure>
+		</testcase>
+		<testcase name="Send Stop" time="0.000">
+			<failure message=" details [code: 1003 source: Invoke Node in TestCase.lvclass:CallTestMethod.vi->TestCase.lvclass:run.vi->TestSuite.lvclass:run.vi->TestRunner.lvclass:run.vi->VI Tester API.lvlib:Run Tests (Test Object Array).vi->VI Tester API.lvlib:Run Tests (Path Array).vi->VI Tester API.lvlib:Run Tests (Path).vi&#xA;&lt;APPEND>&#xA;Method Name: &lt;b>Run VI&lt;/b>&#xA;&#xA;VI Path: &lt;b>P:\alsmith\Sales\users\ACS\Actors\Network Endpoints\1.0\Source\Tests\Test TCP Nested Endpoint Nonforwarded Messages\setUp.vi&lt;/b>]" type="Error"></failure>
+		</testcase>
+	</testsuite>
+	<testsuite failures="0" name="Test TCP Stream Disconnect" tests="1" time="0.063">
+		<testcase name="Disconnect" time="0.063"/>
+	</testsuite>
+	<testsuite failures="0" name="Test TCP Stream Initiator Connect" tests="1" time="0.059">
+		<testcase name="Connect" time="0.059"/>
+	</testsuite>
+	<testsuite failures="1" name="Test TCP Stream Listener Connect" tests="1" time="0.000">
+		<testcase name="Connect" time="0.000">
+			<failure message="ERROR 0.000 sec details [code: 1003 source: Invoke Node in TestCase.lvclass:CallTestMethod.vi->TestCase.lvclass:run.vi->TestSuite.lvclass:run.vi->TestRunner.lvclass:run.vi->VI Tester API.lvlib:Run Tests (Test Object Array).vi->VI Tester API.lvlib:Run Tests (Path Array).vi->VI Tester API.lvlib:Run Tests (Path).vi&#xA;&lt;APPEND>&#xA;Method Name: &lt;b>Run VI&lt;/b>&#xA;&#xA;VI Path: &lt;b>P:\alsmith\Sales\users\ACS\Actors\Network Endpoints\1.0\Source\Tests\Test TCP Stream Listener Connect\test Connect.vi&lt;/b>]" type="Fail"></failure>
+		</testcase>
+	</testsuite>
+	<testsuite failures="0" name="Test TCP Stream Transmission" tests="4" time="0.727">
+		<testcase name="Receive Message" time="0.061"/>
+		<testcase name="Receive Message Abort" time="0.547"/>
+		<testcase name="Send Message" time="0.059"/>
+		<testcase name="Receive Stop Flag" time="0.060"/>
+	</testsuite>
+	<testsuite failures="1" name="Test Data Stream" tests="1" time="0.000">
+		<testcase name="Connect" time="0.000">
+			<failure message="ERROR 0.000 sec details [code: 1003 source: Invoke Node in TestCase.lvclass:CallTestMethod.vi->TestCase.lvclass:run.vi->TestSuite.lvclass:run.vi->TestRunner.lvclass:run.vi->VI Tester API.lvlib:Run Tests (Test Object Array).vi->VI Tester API.lvlib:Run Tests (Path Array).vi->VI Tester API.lvlib:Run Tests (Path).vi&#xA;&lt;APPEND>&#xA;Method Name: &lt;b>Run VI&lt;/b>&#xA;&#xA;VI Path: &lt;b>P:\alsmith\Sales\users\ACS\Actors\Network Endpoints\1.0\Source\Tests\Test Data Stream\test Connect.vi&lt;/b>]&#xA;" type="Fail"></failure>
+		</testcase>
+	</testsuite>
+</testsuites>
